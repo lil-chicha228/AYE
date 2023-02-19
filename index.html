@@ -1,0 +1,44 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            background-color: black;
+            color: rgb(206, 22, 206);
+            font-family: 'Rock Salt', cursive;
+        }
+    </style>
+    <script>
+        const eblan = (text) => {
+            let p = document.createElement("p")
+            if(!isNaN(Number(text))){
+                p.innerHTML = `✔${text+7} - 7 = ${text}✔`
+            } else {
+                p.innerHTML = `${text}`
+            }
+            document.body.append(p);
+        }
+        let pohuy=1000;
+        while(true){
+            pohuy-=7;
+            eblan(pohuy);
+            if(pohuy<1){
+                eblan("DeaD InsIFDE✔✔✔")    
+                break;
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
